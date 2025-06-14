@@ -15,7 +15,9 @@
     "build": "turbo run build",
     "setup": "bash ./scripts/setup.sh",
     "deploy": "bash ./scripts/deploy.sh",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db": "docker-compose -f docker/docker-compose.db.yml up --build",
+    "db:detach": "docker-compose -f docker/docker-compose.db.yml up --build -d"
   },
   "devDependencies": {
     "@types/node": "^22.13.13",
