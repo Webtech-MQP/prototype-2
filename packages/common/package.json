@@ -12,5 +12,8 @@
         "prettier": "*",
         "prettier-config-custom": "workspace:*",
         "ts-config-custom": "workspace:*"
+    },
+    "dependencies": {
+        "zod": "^3.25.64"
     }
 }

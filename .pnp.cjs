@@ -4012,7 +4012,8 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-custom", "workspace:configs/eslint-config-custom"],\
           ["prettier", "npm:3.5.3"],\
           ["prettier-config-custom", "workspace:configs/prettier-config-custom"],\
-          ["ts-config-custom", "workspace:configs/ts-config-custom"]\
+          ["ts-config-custom", "workspace:configs/ts-config-custom"],\
+          ["zod", "npm:3.25.64"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9423,6 +9424,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/zod-npm-3.24.2-ab80dc0969-c638c72201.zip/node_modules/zod/",\
         "packageDependencies": [\
           ["zod", "npm:3.24.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.25.64", {\
+        "packageLocation": "./.yarn/cache/zod-npm-3.25.64-d266658718-00d76093a9.zip/node_modules/zod/",\
+        "packageDependencies": [\
+          ["zod", "npm:3.25.64"]\
         ],\
         "linkType": "HARD"\
       }]\

@@ -17,3 +17,8 @@ model Score {
   time  DateTime
   score Int
 }
+
+model Patient {
+  id    String @id @default(uuid())
+  name  String
+}
