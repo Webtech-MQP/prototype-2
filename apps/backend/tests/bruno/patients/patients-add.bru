@@ -1,0 +1,26 @@
+meta {
+  name: patients-add
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3001/api/patients
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Test Patient 1"
+  }
+}
+
+tests {
+  const response = res.getBody();
+  bru.setVar("patientId", response.id);
+}
+
+docs {
+  Add a patient.
+}

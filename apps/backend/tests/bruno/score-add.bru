@@ -1,7 +1,7 @@
 meta {
   name: score-add
   type: http
-  seq: 4
+  seq: 2
 }
 
 post {
@@ -14,14 +14,14 @@ headers {
   Content-Type: application/json
 }
 
-script:pre-request {
-  const currentDateTime = new Date().toISOString();
-  bru.setEnvVar('currentTime', currentDateTime);
-}
-
 body:json {
   {
     "time": "{{currentTime}}",
     "score": 100
   }
+}
+
+script:pre-request {
+  const currentDateTime = new Date().toISOString();
+  bru.setEnvVar('currentTime', currentDateTime);
 }
