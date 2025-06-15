@@ -14,7 +14,7 @@ import { BookUser, Plus } from 'lucide-react';
 
 export function AppSidebar() {
     return (
-        <Sidebar>
+        <Sidebar collapsible="icon">
             <SidebarHeader />
 
             <SidebarContent>

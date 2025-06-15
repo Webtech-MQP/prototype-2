@@ -1,4 +1,4 @@
-import ExampleComponent from '../components/ExampleComponent.tsx';
+import ExampleComponent from '@/components/ExampleComponent.tsx';
 
 const ExamplePage = () => {
     return (

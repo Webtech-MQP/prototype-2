@@ -19,6 +19,6 @@ model Score {
 }
 
 model Patient {
-  id    String @id @default(uuid())
-  name  String
+  id   String @id @default(uuid())
+  name String
 }
