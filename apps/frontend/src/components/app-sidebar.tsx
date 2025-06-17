@@ -30,6 +30,14 @@ export function AppSidebar() {
                                     </a>
                                 </SidebarMenuButton>
                             </SidebarMenuItem>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton asChild>
+                                    <a href="/appointments">
+                                        <BookUser />
+                                        <span>Apppointments</span>
+                                    </a>
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>

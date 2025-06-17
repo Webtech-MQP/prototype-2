@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ExamplePage from './routes/ExamplePage';
 import PatientRoute from './routes/patients';
 import { useMemo } from 'react';
+import AppointmentRoute from '@/app/routes/appointments.tsx';
 
 export const createAppRouter = () =>
     createBrowserRouter([
@@ -18,6 +19,11 @@ export const createAppRouter = () =>
                     path: 'patients',
                     errorElement: <div />,
                     Component: PatientRoute,
+                },
+                {
+                    path: 'appointments',
+                    errorElement: <div />,
+                    Component: AppointmentRoute,
                 },
             ],
         },
