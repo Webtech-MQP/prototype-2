@@ -6,6 +6,7 @@ import healthcheckRouter from './routes/healthcheck';
 import highscoreRouter from './routes/score.ts';
 import patientRouter from './routes/patients.ts';
 import { API_ROUTES } from 'common/src/constants';
+import appointmentsRouter from './routes/appointments.ts';
 
 const app: Express = express(); // Setup the backend
 
@@ -28,6 +29,7 @@ app.use(cookieParser()); // Cookie parser
 app.use(API_ROUTES.HEALTHCHECK, healthcheckRouter);
 app.use(API_ROUTES.SCORE, highscoreRouter);
 app.use(API_ROUTES.PATIENTS, patientRouter);
+app.use(API_ROUTES.APPOINTMENTS, appointmentsRouter);
 
 /**
  * Catch all 404 errors, and forward them to the error handler

@@ -36,7 +36,8 @@
   "dependencies": {
     "common": "workspace:*",
     "dotenv": "^16.4.7",
-    "dotenv-cli": "^7.4.4"
+    "dotenv-cli": "^7.4.4",
+    "gemini-api": "^2.0.4"
   },
   "resolutions": {
     "dotenv": "^16.4.7",
